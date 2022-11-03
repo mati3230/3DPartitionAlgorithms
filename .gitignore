@@ -1,0 +1,9 @@
+vccs/build
+vgs-svgs/build
+p-linkage/build
+cp/ply_c/build
+cp/cut-pursuit/build
+libgeo/build
+__pycache__
+
+.ipynb_checkpoints
