@@ -8,7 +8,8 @@ This repository contains the following point cloud partition algorithms:
 * [Supervoxel and Graph-based Segmentation (SVGS)](https://github.com/Yusheng-Xu/VGS-SVGS-Segmentation)
 * [Random Sample Consensus (RANSAC) Segmentation](https://pcl.readthedocs.io/projects/tutorials/en/latest/planar_segmentation.html)
 * [Region Growing Algorithm](https://pcl-docs.readthedocs.io/en/latest/pcl/doc/tutorials/content/region_growing_segmentation.html)
-Some of these algorithms are only available in C++. Therefore, we developed a [Boost.Python](https://www.boost.org/doc/libs/1_72_0/libs/python/doc/html/index.html) interface so that they all can be called from Python. Moreover, we extended the VCCS, P-Linkage, Cut-Pursuit, VGS/SVGS so that the edges of a mesh are used. The extensions produce more accurate eigenfeatures and, thus, sharper edges. All algorithms can be executed on Windows, Linux and MacOS.
+
+Some of these algorithms are only available in C++. Therefore, we developed a [Boost.Python](https://www.boost.org/doc/libs/1_72_0/libs/python/doc/html/index.html) interface so that they all can be called from Python. Moreover, we extended the VCCS, P-Linkage, Cut-Pursuit, VGS/SVGS so that the edges of a mesh are used. The extensions produce more accurate eigenfeatures and, thus, sharper edges. All algorithms can be executed on Windows, Linux and MacOS. The algorithms can be seen in action on [YouTube](https://youtu.be/vklkLWeQSwg) where they are integrated in [OpenXtract](https://github.com/mati3230/openxtract).
 
 ## Compilation
 
