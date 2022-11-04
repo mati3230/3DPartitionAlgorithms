@@ -48,6 +48,14 @@ Boost python has changed its folder structure for python 3.9. The file python.hp
 
 Search for the file 'boost_python.lib' in your conda environment. Copy the file and rename it to 'libboost_python.lib'. Repeat this process with all libraries that start with boost_python and boost_numpy. After that, recompile the project. 
 
+## Manual Specification of the Dependencies
+
+It also possible to delete the find_package commands in the [./src/CMakeLists](./src/CMakeLists.txt). To do so, rename the [./src/CMakeLists_Manual](./src/CMakeLists_Manual.txt) to ./src/CMakeLists.txt. After that, libraries can be manually specified such as in the following example.
+```
+cmake . .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3 -DPYTHON_LIBRARIES=/home/mati3230/anaconda3/envs/roy/lib/libpython3.9.so -DPYTHON_INCLUDE_DIRS=/home/mati3230/anaconda3/envs/roy/include/python3.9 -DPYTHON_EXECUTABLE=/home/mati3230/anaconda3/envs/roy/bin/python -DPYTHON_NUMPY_INCLUDE_DIR=/home/mati3230/anaconda3/envs/roy/lib/python3.9/site-packages/numpy/core/include -DBoost_INCLUDE_DIRS=/home/mati3230/anaconda3/envs/roy/include -DBoost_LIBRARY_DIRS=/home/mati3230/anaconda3/envs/roy/lib -DPYTHON_MAJOR_VER=3 -DPYTHON_MINOR_VER=9
+``` 
+Note that you must replace these paths and the python major and minor version according to yout system. 
+
 # Original README of Landrieu et al.
 
 # cut pursuit: a working-set strategy to compute piecewise constant functions on graphs
