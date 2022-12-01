@@ -27,7 +27,7 @@ conda install -c anaconda boost
 
 as it is used for the C++/Python interface. Please compile the **libgeo** first (see [README](./libgeo/README.md)) so that the extended algorithms can be tested.
 
-The exact compilation steps for each algorithm can be found in the corresponding subfolder. For instance, the [README](./vccs/README.md)) file in the vccs folder contains the compilation steps of the voxel cloud connectivity segmentation (VCCS) algorithm. The algorithms can be compiled with CMake. The RANSAC and Region Growing algorithm do not require any compilation. The extended algorithms use the libgeo library which approx. the geodesic distances between vertices by calculating the shortest paths. Optionally, it can be compiled and tested in isolation.
+The exact compilation steps for each algorithm can be found in the corresponding subfolder. For instance, the [README](./vccs/README.md) file in the vccs folder contains the compilation steps of the voxel cloud connectivity segmentation (VCCS) algorithm. The algorithms can be compiled with CMake. The RANSAC and Region Growing algorithm do not require any compilation. The extended algorithms use the libgeo library which approx. the geodesic distances between vertices by calculating the shortest paths. Optionally, it can be compiled and tested in isolation.
 
 ## Quickstart
 
