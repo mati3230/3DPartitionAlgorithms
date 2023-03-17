@@ -63,4 +63,19 @@ After that, you can start the jupyter notebook **Analyze.ipynb** and execute all
 
 ## Citation
 
-If you find this repository useful, please cite:
+```
+@inproceedings{Tiator2022,
+   author = {Marcel Tiator and Calvin Huhn and Christian Geiger and Paul Grimm},
+   city = {Virtual Event},
+   journal = {Proceedings of the 5th International Conference on Artificial Intelligence and Virtual Reality - AIVR '22},
+   publisher = {IEEE},
+   title = {OpenXtract: A Blender Add-On for the Accelerated Extraction of the Objects of Interest},
+   year = {2022},
+}
+```
+
+## Acknowledgements
+
+This project is sponsored by: German Federal Ministry of Education and Research (BMBF) under the project number 13FH022IX6. Project name: Interactive body-near production technology 4.0 (German: Interaktive körpernahe Produktionstechnik 4.0 (iKPT4.0))
+
+![bmbf](./bmbflogo.jpg)
